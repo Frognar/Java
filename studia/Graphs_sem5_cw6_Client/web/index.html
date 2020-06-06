@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Graphs</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <form action="AddVertexServlet" method="post">
+            <INPUT type=text name=label placeholder="Label">
+            <input type="submit" value="Add Vertex" />
+        </form>
+        <br>------------------------------------------------------------------<br>
+        <form action="AddEdgeServlet" method="post">
+            <INPUT type=text name=sLabel placeholder="startLabel"><br>
+            <INPUT type=text name=eLabel placeholder="endLabel"><br>
+            <INPUT type=text name=weight placeholder="Weight">
+            <input type="submit" value="Add Edge" />
+        </form>
+        <br>------------------------------------------------------------------<br>
+        <form action="ReturnGraphServlet" method="post">
+            <input type="submit" value="Show graph" />
+        </form>
+        <br>------------------------------------------------------------------<br>
+        <form action="ReturnFWServlet" method="post">
+            <input type="submit" value="Show FW" />
+        </form>
+        <br>------------------------------------------------------------------<br>
+        <form action="ResetGraphServlet" method="post">
+            <input type="submit" value="Reset" />
+        </form>
+    </body>
+</html>
